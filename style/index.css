@@ -7,10 +7,11 @@
     padding:0;
     margin:0;
     font-family: 'Merriweather', serif;
+    /* background-color:black; */
 }
 header{
     display:flex-wrap;
-    border: 2px solid black;
+    border: 2px dashed black;
     background:rgb(121, 121, 238);
     
 }
@@ -18,13 +19,13 @@ header{
     font-family: 'Merriweather', serif;
     font-size:45px;
     color:white;
-    margin:25px 20px 25px 50px;
+    margin:20px 25px 20px 25px;
     padding:0px 10px 20px 30px
    
 }
 nav{
     display:flex;
-    height:120px;
+    height:120%;
     width:60%;
     align-items: center;
     margin:auto
@@ -37,9 +38,10 @@ p{
    
    nav a{
     display:flex;
-    flex-direction:row;
-    height:17px;
-    width:60px;
+    
+    flex-wrap:wrap;
+    height:30px;
+    width:100%;
     text-decoration:none;
     font-family:bold;
     color:white;
@@ -47,30 +49,45 @@ p{
     font-size:17px;
     margin: 60px 0px 60px 0px;
     padding:20px 20px 20px 20px;
-    border:2px solid black;
+    border:2px dashed black;
     transition:.3s;
     
 
 }
 #sec1 img{
     display:flex;
-    justify-content: ;
+    width:100%
 
 }
 .sec1    {
     display:flex;
-    align-items: end;
+    justify-content:space-evenly;
+    align-content:space-evenly;
+    flex-wrap:wrap;
     height: 70%;
     width:80%;
     padding:20px 10px 20px 10px;
     margin:20px 80px 20px 80px;
-    
+    background:skyblue;
 }
 .abody {
     border: 2px dashed red;
+    background:gold;
     
 }
-
+button{
+    padding:24px;
+    border: 3px solid blue;
+    background:lightgray;
+    border-radius: 90px;
+}
+.abody{
+    display:flex;
+    flex-direction:column;
+}
+strong{
+    font-size:28px;
+}
 body img {
     width:350px;
     border-radius: 90px;
@@ -91,28 +108,29 @@ body img {
 section{
     display:flex;
     justify-content:space-evenly;
-    align-content:space-evenly;
+    align-content:space-between;
     flex-wrap:wrap;
     width:100%;
     border:1px solid black;
-    height:60vh;
+    height:60%;
+    margin: 10px 10px 10px 10px;
   }
   
   .sec2{
-      padding:2px 2px 2px 2px;
+      padding:4px 4px 4px 4px;
   }
   
   .text{ 
       margin:2px 0px 0px 0px; 
     
   }
-  .text a{
+  /* .text a{
     font-family:arial;
     font-size:1.2rem;
     text-decoration:none;
     color:white;
-    text-shadow:1px 1px black;
-  }
+    text-shadow:1px 1px lightcoral;
+  } */
    footer{
        display:flex;
        background:url(https://3iom3142cnb81rlnt6w4mtlr-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Bf64580dfb9f301a0949e60106526057.1824x0_q100_watermark_watermark_opacity-10_watermark_position-6_watermark_text-Copyright_Intihuatana-702x336.jpg);
