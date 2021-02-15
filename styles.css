@@ -84,7 +84,7 @@ nav a{
         transition:.3s;
 } 
 a:hover{
-    color:white;
+    color:purple;
     background:white;
 }
 .top img{
@@ -117,12 +117,17 @@ h1 {
   }
   .bottom{
     display:flex;
+    flex-wrap:wrap;
   }
   .bottom img {
       width:19%;
   }
-
-
+/* .bottom2{
+    width: 19%;
+    height:35vh;
+background: aqua;
+}
+ */
 
 
 
