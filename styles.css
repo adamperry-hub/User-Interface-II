@@ -54,7 +54,7 @@ table {
 }
 body{
     background-image:url(https://images.unsplash.com/photo-1541447237128-f4cac6138fbe?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1218&q=80); 
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-color: aqua;
 }
 header{
@@ -103,7 +103,7 @@ h1 {
     width:100%;
     padding:5%;
     color:purple;
-    border:1px solid white;
+    border:2px solid white;
     
 }
 .middle:hover{
@@ -117,11 +117,13 @@ h1 {
     background-size:cover;
     background-repeat:no-repeat;
     background-attachment:fixed;
+    border:2px solid white;
   }
 
   .bottom img {
       width:100%;
       height:25vh;
+      border:2px solid white;
   }
   .together{
     display:flex;
@@ -136,9 +138,11 @@ h1 {
 .para {
     color:whitesmoke;
     font-size:1.2rem;
-    padding:30% 20%;
+    padding:30% 10%;
     border:2px solid white;
     height:25vh;
+    width:100%;
+    text-align: center;
 }
 @media(max-width:500px){
     nav{
@@ -154,6 +158,58 @@ h1 {
         width:50%;
         margin:0% 25% 5% 25%;
     }
+    .bgImg{
+        width:100%;
+        height:40vh;
+        background-image:url(https://images.unsplash.com/photo-1471079502516-250c19af6928?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=967&q=80);
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-position: center;
+      }
+      .bottom img {
+        width:100%;
+        height:40vh;
+    }
+    .together {
+      display:flex;
+      flex-wrap:wrap;
+      flex-direction:row;
+      width:80%;
+      justify-content:space-evenly;
+      margin:5% 0% 0% 10%;
+    }
+    .para{     
+        padding:15%;
+    }
+    .box{
+        margin:none;
+        width:45%;
+    }
+    /* .together{
+        display:flex;
+        width:96%;
+        justify-content:space-evenly;
+        /* margin:2%; */
+    /* }
+      .bottom img {
+      width:100%;
+      height:25vh;
+  }
+    .box{
+        margin:2%;
+        width:100%;
+    }
+    .para {
+        color:whitesmoke;
+        font-size:1.2rem;
+        padding:30% 10%;
+        border:2px solid white;
+        height:25vh;
+        width:100%;
+        text-align: center;
+    } */
+
 
 
 
