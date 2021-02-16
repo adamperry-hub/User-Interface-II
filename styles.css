@@ -1,0 +1,245 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:;
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*staaaaaaaaaaaaaaaaaart*/
+*{
+    box-sizing: border-box;
+    font-size:62.5%;
+
+}
+body{
+    background-image:url(https://images.unsplash.com/photo-1541447237128-f4cac6138fbe?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1218&q=80); 
+    background-repeat:repeat;
+    background-color: aqua;
+}
+header{
+    text-align:center;
+    font-size:2rem;
+    margin:10% 4% 0 ;
+    color:white;
+}
+
+nav{
+    display:flex;
+    margin:5% 20%;
+    justify-content:space-around;
+}
+
+nav a{
+        *
+        height:30px;
+        width:100%;
+        text-decoration:none;
+        font-family:bold;
+        color:purple;
+        background:aqua;
+        font-size:17px;
+        padding:5% 7% 5% 7%;
+        border:1px solid white;
+        transition:.3s;
+} 
+a:hover{
+    color:white;
+    background:transparent;
+}
+.top img{
+    font-size:2.5rem;
+    border-radius:50%;
+    width:35%;
+    margin:0% 32%;
+}
+h1 {
+    font-size:1.4rem;
+    text-align: center;
+
+}
+.middle{
+    background:aqua;
+    width:100%;
+    padding:5%;
+    color:purple;
+    border:2px solid white;
+    
+}
+.middle:hover{
+    color:white;
+    background:transparent;
+}
+.bgImg{
+    width:100%;
+    height:40vh;
+    background-image:url(https://images.unsplash.com/photo-1471079502516-250c19af6928?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=967&q=80);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    border:2px solid white;
+  }
+
+  .bottom img {
+      width:100%;
+      height:25vh;
+      border:2px solid white;
+  }
+  .together{
+    display:flex;
+    width:96%;
+    justify-content:space-evenly;
+    /* margin:2%; */
+}
+.box{
+    margin:2%;
+    width:100%;
+}
+.para {
+    color:whitesmoke;
+    font-size:1.2rem;
+    padding:30% 10%;
+    border:2px solid white;
+    height:25vh;
+    width:100%;
+    text-align: center;
+}
+@media(max-width:800px){
+    nav{
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+    }   
+    nav a{
+        text-align: center;
+    }
+    .top img{
+        border-radius:50%;
+        width:50%;
+        margin:0% 25% 5% 25%;
+    }
+    .bgImg{
+        width:100%;
+        height:40vh;
+        background-image:url(https://images.unsplash.com/photo-1471079502516-250c19af6928?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=967&q=80);
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-position: center;
+      }
+      .bottom img {
+        width:100%;
+        height:40vh;
+    }
+    .together {
+      display:flex;
+      flex-wrap:wrap;
+      flex-direction:row;
+      width:80%;
+      justify-content:space-evenly;
+      margin:5% 0% 0% 10%;
+    }
+    .para{     
+        padding:15%;
+    }
+    .box{
+        margin:none;
+        width:45%;
+    }
+
+
+
+
+
+
+
+@media(max-width:500px){
+    nav{
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+    }   
+    nav a{
+        text-align: center;
+    }
+    .top img{
+        border-radius:50%;
+        width:50%;
+        margin:0% 25% 5% 25%;
+    }
+    .bgImg{
+        width:100%;
+        height:40vh;
+        background-image:url(https://images.unsplash.com/photo-1471079502516-250c19af6928?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=967&q=80);
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-position: center;
+      }
+      .bottom img {
+        width:100%;
+        height:40vh;
+    }
+    .together {
+      display:flex;
+      flex-wrap:wrap;
+      flex-direction:row;
+      width:80%;
+      justify-content:space-evenly;
+      margin:5% 0% 0% 10%;
+    }
+    .para{     
+        padding:15%;
+    }
+    .box{
+        margin:none;
+        width:45%;
+    }
+    
+    
+
+
+
+
+
+
